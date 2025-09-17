@@ -1,0 +1,30 @@
+<!-- Create a basic resume.pdf file in your project folder. 
+You can use the following template for resume.pdf: -->
+
+Priyojit Mitra
+Email: priyojitmitra2005@gmail.com | Phone: +91 7980138137 | LinkedIn: www.linkedin.com/in/priyojit-mitra-55796332a | GitHub: github.com/priyojit-mitra2005
+
+Objective:
+Passionate and motivated engineering student with strong interest in data analytics, programming, and AI-driven technologies. Seeking opportunities in data analysis, software development, and AI.
+
+Education:
+B.Tech, Supreme Knowledge Foundation Group of Institutions
+
+Technical Skills:
+- Languages: C, C++, JavaScript, HTML, CSS
+- Data Visualization: Power BI, Tableau
+- AI/ML: Foundations of prompt engineering, Python (basics)
+
+Projects:
+- Interactive Portfolio Website
+- Data Visualization Dashboards (Power BI, Tableau)
+- Front-End Web Projects
+
+Strengths:
+- Quick learner, problem solver, team player
+- Strong analytical and communication skills
+
+Declaration:
+I hereby declare that the above information is true to the best of my knowledge.
+
+Priyojit Mitra
