@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 40%, #a1c4fd 100%);
+    color: #e0e6f6;
+    font-family: 'poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated glowing gradient overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: -20%;
+    left: -20%;
+    width: 140vw;
+    height: 140vh;
+    z-index: -1;
+    background: radial-gradient(circle at 20% 40%, #a1c4fd66 0%, transparent 60%),
+                radial-gradient(circle at 80% 70%, #fbc2eb44 0%, transparent 60%),
+                radial-gradient(circle at 50% 90%, #667eea33 0%, transparent 70%);
+    animation: bgMove 12s linear infinite alternate;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+@keyframes bgMove {
+    0% {
+        transform: scale(1) translateY(0) rotate(0deg);
+        filter: blur(0px);
+    }
+    50% {
+        transform: scale(1.05) translateY(-30px) rotate(8deg);
+        filter: blur(2px);
+    }
+    100% {
+        transform: scale(1.1) translateY(20px) rotate(-8deg);
+        filter: blur(0px);
+    }
+}
+
+/* Subtle animated grid overlay for a soothing futuristic look */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: -1;
+    background: repeating-linear-gradient(
+        120deg, 
+        rgba(255,255,255,0.03) 0px, 
+        rgba(255,255,255,0.03) 1px, 
+        transparent 1px, 
+        transparent 40px
+    );
+    pointer-events: none;
+    animation: gridFade 6s ease-in-out infinite alternate;
+}
+
+@keyframes gridFade {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.4; }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(18, 18, 70, 0.98);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e6f6;
+    text-shadow: 0 1px 8px #23235b88;
+}
+
+nav ul li a:hover {
+    color: #ffd166;
+    text-shadow: 0 0 12px #ffd16688;
+}
+
+main hr {
+    border: 0 px;
+    background: #9c97f1;
+    height: 0.2px;
+    margin: 50px 84px;
+}
+
+.left {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+    transition: opacity 1.2s, transform 1.2s;
+    will-change: opacity, transform;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    width: 50%;
+    font-size: 40px;
+    margin: 30px 0;
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+.leftsection .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #23235b;
+    background: linear-gradient(90deg, #ffd166 60%, #8ec5fc 100%);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px #ffd16655, 0 0 8px #8ec5fc33;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.leftsection .btn:hover {
+    background: linear-gradient(90deg, #e573e5 60%, #ffd166 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 24px #ffd166cc, 0 0 16px #8ec5fc99;
+}
+.rightsection img {
+    width: 80%;
+}
+
+.purple {
+    color: #e573e5;
+}
+
+.text-gray {
+    color: #b3c6e6;
+}
+
+#element {
+    color: #ffd166;
+    text-shadow: 0 0 8px #ffd16672;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh
+}
+
+.secondSection h1 {
+    font-size: 28px;
+}
+
+.secondSection .box {
+    background: white;
+    height: 2px;
+    width: 85vw;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .box .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 160px;
+    opacity: 0;
+    transform: scale(0.7) translateY(40px);
+    transition: opacity 0.7s, transform 0.7s;
+    will-change: opacity, transform;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    width: 150px;
+    font-size: 16px;
+    color: #ffd166;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px #ffd16688, 0 0 16px #8ec5fc66;
+    background: rgba(30, 34, 60, 0.7);
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: 0 0 12px #ffd16655, 0 0 24px #8ec5fc33;
+    transition: box-shadow 0.4s, text-shadow 0.4s;
+    z-index: 2;
+}
+
+.vertical-desc:hover {
+    box-shadow: 0 0 24px #ffd166cc, 0 0 32px #8ec5fc99;
+    text-shadow: 0 0 24px #ffd166cc, 0 0 32px #8ec5fc99;
+}
+
+.footer{
+    background: linear-gradient(90deg, #23235b 60%, #8ec5fc 100%);
+    box-shadow: 0 -4px 32px #23235b55;
+    border-top: 2px solid #ffd166;
+    min-height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #e0e6f6;
+    font-size: 20px;
+    padding: 32px 60px 0 60px; /* Remove bottom padding, add top */
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    z-index: 2;
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+    overflow: hidden;
+}
+
+.footer-rights {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1rem;
+    color: #b3c6e6;
+    letter-spacing: 0.5px;
+    padding: 18px 60px 18px 60px;
+    border-top: 1px solid #8ec5fc44;
+    background: linear-gradient(90deg, #23235b 60%, #8ec5fc 100%);
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 32px #23235b33;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 18px 0 18px;
+        border-radius: 18px 18px 0 0;
+    }
+    .footer-rights {
+        padding: 18px 18px;
+        border-radius: 0 0 18px 18px;
+    }
+}
+
+/* Enhanced Contact Section Styles */
+.contact-section {
+    background: linear-gradient(135deg, #23235b 0%, #8ec5fc 100%);
+    padding: 48px 24px;
+    margin: 48px auto;
+    max-width: 600px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(76, 51, 255, 0.12), 0 1.5px 8px rgba(0,0,0,0.07);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 1.2s, opacity 1.2s, transform 1.2s;
+    will-change: box-shadow, opacity, transform;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, #4b2aad55 60%, transparent 100%);
+    z-index: 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ffd166;
+    text-shadow: 0 2px 12px #23235b55;
+    margin-bottom: 28px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    position: relative;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 1;
+    position: relative;
+    animation: formFadeIn 0.7s ease;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #ffd166;
+    margin-bottom: 6px;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
+    border: 2px solid #8ec5fc;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    font-family: inherit;
+    background: rgba(30, 34, 60, 0.95);
+    color: #e0e6f6;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(76, 51, 255, 0.07);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffd166;
+    box-shadow: 0 0 0 2px #ffd16655;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 220px;
+}
+
+.contact-form button {
+    background: linear-gradient(90deg, #ffd166 60%, #8ec5fc 100%);
+    color: #23235b;
+    border: none;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(76, 51, 255, 0.09);
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 1px;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #e573e5 60%, #ffd166 100%);
+    color: #23235b;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #b39ddb;
+    opacity: 1;
+    font-style: italic;
+}
+
+/* Add a subtle animation to the form on load */
+@keyframes formFadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive for contact section */
+@media (max-width: 700px) {
+    .contact-section {
+        max-width: 97vw;
+        padding: 20px 3vw;
+        border-radius: 10px;
+    }
+    .contact-section h1 {
+        font-size: 1.3rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    background: linear-gradient(120deg, #23235b 60%, #8ec5fc 100%);
+    padding: 40px 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(76, 51, 255, 0.10);
+    color: #e0e6f6;
+    position: relative;
+    z-index: 1;
+    backface-visibility: hidden;
+    perspective: 800px;
+    transition: box-shadow 1s;
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    color: #ffd166;
+    text-shadow: 0 2px 12px #23235b55;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.13rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #e0e6f6;
+    text-align: justify;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Fix: Ensure sections are visible by default and only hidden for animation */
+.about-section,
+.footer {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s, transform 1s;
+    will-change: opacity, transform;
+}
+
+/* When ScrollMagic triggers, .visible will animate them */
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+    transition: all 0.7s cubic-bezier(.77,0,.18,1);
+}
+
+/* Interest section vertical cards pop-in effect */
+.secondSection .vertical {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.7s, transform 0.7s;
+    will-change: opacity, transform;
+}
+
+/* .pop-in animation for vertical cards */
+.pop-in {
+    animation: popIn 0.7s cubic-bezier(.77,0,.18,1) forwards;
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.7) translateY(40px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Pulse animation for contact section */
+.pulse {
+    animation: pulseAnim 1.2s infinite alternate;
+}
+
+@keyframes pulseAnim {
+    from { box-shadow: 0 0 0px #4b2aad88; }
+    to { box-shadow: 0 0 24px #4b2aad88; }
+}
+
+@media (max-width: 700px) {
+    .about-section {
+        max-width: 97vw;
+        padding: 18px 5vw;
+        border-radius: 10px;
+    }
+    .about-section h1 {
+        font-size: 1.3rem;
+    }
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+/* GSAP Animation Enhancements */
+
+/* Header animated shadow and bounce effect */
+header {
+    box-shadow: 0 8px 32px rgba(76, 51, 255, 0.12);
+    transition: box-shadow 0.5s;
+}
+
+/* Nav link hover GSAP effect */
+nav ul li a {
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+    will-change: color, transform, text-shadow;
+}

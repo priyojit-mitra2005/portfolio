@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyojit-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="gsap-animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="scrollMagic.js"></script>
+    <script src="contact-storage.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyojit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="newPortfolio.html">Home</a></li>
+                    <li><a href="#about-section">About Me</a></li>
+                    <li><a href="#interest-section">Interest area</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#contact-section">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">Priyojit Mitra</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="resume.pdf.txt" class="btn" download>Download Resume</a>
+                    <a href="https://github.com/priyojit-mitra2005" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="Developer photo.webp" alt="">
+            </div>
+        </section>
+        <section class="about-section" id="about-section">
+            <h1>About Me</h1>
+            <p>
+                I’m a passionate and motivated engineering student at Supreme Knowledge Foundation, with a strong
+                interest in data analytics, programming, and AI-driven technologies. My technical skillset includes
+                Power BI and Tableau for data visualization, along with solid experience in C, C++, JavaScript, HTML,
+                and CSS. I’m currently exploring the foundations of prompt engineering and its applications in modern AI
+                tools.
+            </p>
+            <p>
+                My goal is to blend engineering knowledge with real-world problem-solving, especially through
+                data-driven insights and intelligent systems. I enjoy working on projects that challenge me to learn,
+                think critically, and innovate.
+            </p>
+            <p>
+                Whether it’s building intuitive dashboards, writing clean code, or experimenting with emerging
+                technologies, I’m constantly looking for opportunities to grow and contribute. I am open to internships,
+                collaborations, and mentorship in the areas of data analysis, software development, and AI.
+            </p>
+            <p>
+                Let’s connect and learn together!
+            </p>
+        </section>
+        <hr>
+        <section class="secondSection" id="interest-section">
+            <span class="text-gray">What I want to be in future</span>
+            <h1>Interested field to work</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Front-End Developer
+                    </div>
+                    <div class="vertical-desc">
+                        (HTML, CSS, JavaScript, React)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="exploratory-analysis.png" alt="">
+                    <div class="vertical-title">
+                        Data Analyst
+                    </div>
+                    <div class="vertical-desc">
+                        (Excel, SQL, Power BI, Tableau)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="AI-ML icon.png" alt="">
+                    <div class="vertical-title">
+                        AI/ML Enthusiast
+                    </div>
+                    <div class="vertical-desc">
+                        (Artificial Intelligence and Machine Learning)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="data scientist.png" alt="">
+                    <div class="vertical-title">
+                        Data Scientist
+                    </div>
+                    <div class="vertical-desc">
+                        (Python, R, SQL, Machine Learning)
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <h1>Contact Me</h1>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Type your message here..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-First">
+                <h3>Priyojit's Developer portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                <h4>Email</h4>
+                <p><a href="mailto:priyojitmitra2005@gmail.com">priyojitmitra2005@gmail.com</a></p>
+            </div>
+            <div class="footer-Third">
+                <h4>Phone</h4>
+                <p><a href="tel:+917980138137">+91 7980138137</a></p>
+            </div>
+            <div class="footer-Fourth">
+                <h4>Social</h4>
+                <p>
+                    <a href="https://www.linkedin.com/in/priyojit-mitra-55796332a" target="_blank"
+                        rel="noopener">LinkedIn</a> |
+                    <a href="https://github.com/priyojit-mitra2005" target="_blank" rel="noopener">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>copyright &copy; 2025 Priyojit Mitra. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Web Developer", "Front-end Developer", "AI/ML Enthusiast", "Data Analyst", "Data Scientist"],
+            loop: true,
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
