@@ -16,6 +16,95 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="scrollMagic.js"></script>
     <script src="contact-storage.js"></script>
+    <!-- Responsive styles -->
+<style id="responsive">
+    /* Make navigation stack vertically on small screens */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav .right ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav .right ul li {
+            margin: 5px 0;
+        }
+
+        .firstsection {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .leftsection {
+            margin-bottom: 20px;
+        }
+
+        .leftsection .button {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .rightsection img {
+            width: 80%;
+            max-width: 300px;
+            margin: auto;
+            display: block;
+        }
+
+        .secondSection .box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .vertical {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+        }
+
+        footer .footer {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+    }
+
+    /* Extra small devices */
+    @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .purple {
+            font-size: 18px;
+        }
+
+        nav .left {
+            font-size: 18px;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -166,5 +255,6 @@
         });
     </script>
 </body>
+
 
 </html>
